@@ -1,5 +1,5 @@
-body{
-    background-color: white;
+body {
+  background-color: white;
 }
 /*
     Elements: Page
@@ -8,15 +8,12 @@ body{
 */
 
 html {
-    
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-    color: black;
-    padding: 24px 24px 0;
-    background: blue;
-
-
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  color: black;
+  padding: 24px 24px 0;
+  background: blue;
 }
 
 /*
@@ -27,44 +24,47 @@ html {
  */
 
 ::-moz-selection {
-    background: cadetblue;
-    color: white;
+  background: cadetblue;
+  color: white;
 }
 
 ::selection {
-    background: cadetblue;
-    color: white;
+  background: cadetblue;
+  color: white;
 }
 
-body{
-    max-width: 42em;
-    /*ik ga dat niet vergeten het verwijst naar de root font-size van onze html element(nu nog 16px)en dus hoe breed is dat nu: 16*42-672px*/
-    margin: 0 auto;
+body {
+  max-width: 42em;
+  /*ik ga dat niet vergeten het verwijst naar de root font-size van onze html element(nu nog 16px)en dus hoe breed is dat nu: 16*42-672px*/
+  margin: 0 auto;
 }
-img{
-    max-width: 100%;
-    vertical-align: top;
+img {
+  max-width: 100%;
+  vertical-align: top;
 }
 h1 {
-    font-family: "Times New Roman", serif;
-    font-size: 36px;    
-    font-weight: normal;
-    line-height: 40px;
-    margin: 0 0 48px;
+  font-family: 'Times New Roman', serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 40px;
+  margin: 0 0 48px;
 }
 
 h2 {
-
+  font-size: 23px;
+  line-height: 32px;
+  margin: 0 0 24px;
 }
 
 h3 {
-
 }
 
 h4,
 h5,
 h6 {
-
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 24px;
 }
 
 p,
@@ -74,42 +74,86 @@ dl,
 table,
 address,
 figure {
-
+  margin: 0 0 24px;
 }
 
 ul,
-ol,
-blockquote {
-
+ol {
+  padding-left: 24px;
 }
 
 li ul,
-li ol{
-
+li ol {
+  margin-bottom: 0;
 }
 
 blockquote {
+  font-style: italic;
+  font-size: 23px;
+  line-height: 32px;
+  margin: 0 0 24px;
+  font-family: 'Times Nezw Roman', serif;
+}
 
+blockquote * {
+  font-size: inherit;
+  line-height: inherit;
 }
 
 figcaption {
-
+  font-size: 12px;
+  line-height: 16px;
+  padding-top: 8px;
+  color: grey;
 }
 
 hr {
-
+  border: 0;
+  height: 1px;
+  background: lightgray;
+  margin: 0 0 24px;
 }
 
 a {
-
+  color: royalblue;
+  transition: all 0.1s ease-in-out;
 }
 
 a:hover,
 a:focus {
-
+  color: crimson;
 }
 
 a:visited,
 a:active {
-    
+  color: blueviolet;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+th {
+  text-align: left;
+}
+
+th,
+td {
+  padding: 4px 8px;
+  border-bottom: 1px solid gainsboro;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 58px;
+    line-height: 64px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  html {
+    padding: 48px 48px 24px;
+  }
 }
